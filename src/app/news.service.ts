@@ -11,7 +11,7 @@ export class NewsService {
 
   constructor(private http: HttpClient) {}
 
-  getNews() {
-    return this.http.get(this.apiUrl);
+  getNews(): Observable<Newsitem[]> {
+    return this.http.get<Newsitem[]>(this.apiUrl);
   }
 }

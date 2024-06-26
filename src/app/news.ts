@@ -1,5 +1,4 @@
 export interface Newsitem {
-  catergory: string;
-  type: string;
+  category: string;
   joke: string;
 }
